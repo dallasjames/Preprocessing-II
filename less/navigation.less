@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+.top {
+
+    .nav();
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    
+    a {
+        margin: 0 2rem 0 2rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.top h1 {
+    margin-right: 24.3rem;
+}
+
+@media @phones {
+    .top {
+        .mobile(column);
+    }
+
+    .top h1 {
+        margin: 0 auto;
+    }
+}

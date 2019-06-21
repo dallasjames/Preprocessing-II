@@ -5,8 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -57,5 +55,47 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .btn {
+      .button();
+    }
+  }
+}
+
+.welcome {
+  margin-top: 2rem;
+ border-bottom: 2px dashed @navigation-border;
+}
+
+@media @phones {
+
+  .content-section {
+    .mobile(column);
+  }
+  
+  .home .content-section .text-content {
+    width: 95%;
+  }
+
+
+
+  .inverse-content {
+    .mobile(column-reverse);
+  }
+
+  .content-pick {
+    .mobile(column);
+  }
+
+  .home .content-destination {
+    width: 95%;
+  }
+
+  .home .content-pick .destination {
+    width: 80%;
+  }
+
+  .home .content-pick .btn {
+    width: 90%;
   }
 }// home
