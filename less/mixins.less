@@ -1,1 +1,25 @@
 // Mixins in here
+.nav() {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.button() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white;
+    background: teal;
+}
+
+.mobile(@column) {
+    display: flex;
+    flex-direction: @column;
+    justify-content: center;
+    align-items: center;
+}
